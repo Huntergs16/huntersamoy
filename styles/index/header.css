@@ -37,7 +37,11 @@
   width: 2rem;
   opacity: 0;
   top: 5px;
-  transition: 200ms linear;
+  transition: 100ms linear;
+}
+
+.link-container a {
+  transition: 100ms linear;
 }
 
 .link-container:hover img {

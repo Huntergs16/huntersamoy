@@ -2,10 +2,13 @@
     height: 30%;
     display: flex;
     padding: 0 7%;
+    position: absolute;
+    top: 0;
+    left: 0;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 40%;
+    gap: 20%;
     font-size: 1.5rem;
 }
 
