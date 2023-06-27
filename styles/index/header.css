@@ -36,35 +36,13 @@
   position: absolute;
   width: 2rem;
   opacity: 0;
-  top: 30px;
+  top: 10px;
+  transition: 200ms linear;
 }
 
 .link-container:hover img {
   opacity: 1;
-  animation: hover-link 150ms linear;
-}
-
-@keyframes hover-link {
-  0% {
-      top: 6px;
-      opacity: 0;
-  }
-  25% {
-      top: 12px;
-      opacity: 0.3;
-  }
-  50% {
-      top: 18px;
-      opacity: 0.6;
-  }
-  75% {
-      top: 24px;
-      opacity: 0.9;
-  }
-  100% {
-      top: 30px;
-      opacity: 1;
-  }
+  top: 35px;
 }
 
 /* Dropdown Menu */
