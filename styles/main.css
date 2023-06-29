@@ -9,22 +9,20 @@ html,
 body {
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
 
 body {
   background-image: url("../public/nighttime.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 
   position: absolute;
-  width: 100vw;
-  height: 100vh; /* Set the height to the viewport height */
-  overflow-y: auto; /* Enable vertical scrolling when needed h*/
 }
 
 main {
