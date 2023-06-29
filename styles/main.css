@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-image: url("public/nighttimepng.png");
+  background-image: url("../public/nighttimepng.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
