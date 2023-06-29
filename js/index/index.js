@@ -1,31 +1,46 @@
-// JavaScript for Typewriter Effect
-const titles = ['Software Engineer', 'Music Producer', 'Designer', 'Web Developer'];
-const typewriter = document.getElementById('typewriter');
-let index = 0;
-let charIndex = 0;
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", () => {
+  const typewriterElement = document.getElementById("typewriter");
+  const titles = [
+    "Software Engineer.",
+    "Music Producer.",
+    "Designer.",
+    "Web Developer.",
+    "Creator.",
+  ];
+  const typingDelay = 100; // Delay between each character (in milliseconds)
+  const titleDelay = 2000; // Delay between each title (in milliseconds)
 
-function type() {
-  if (charIndex < titles[index].length) {
-    typewriter.innerHTML += titles[index].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, 100); // Adjust typing speed (milliseconds)
-  } else {
-    setTimeout(erase, 1500); // Adjust pause between typing and erasing (milliseconds)
-  }
-}
+  let titleIndex = 0;
+  let charIndex = 0;
 
-function erase() {
-  if (charIndex > 0) {
-    typewriter.innerHTML = titles[index].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 50); // Adjust erasing speed (milliseconds)
-  } else {
-    index++;
-    if (index >= titles.length) {
-      index = 0;
+  function type() {
+    if (charIndex < titles[titleIndex].length) {
+      typewriterElement.textContent += titles[titleIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      setTimeout(erase, titleDelay);
     }
-    setTimeout(type, 500); // Adjust pause between phrases (milliseconds)
   }
-}
 
-document.addEventListener('DOMContentLoaded', type);
+  function erase() {
+    if (charIndex > 0) {
+      typewriterElement.textContent = titles[titleIndex].substring(
+        0,
+        charIndex - 1
+      );
+      charIndex--;
+      setTimeout(erase, typingDelay);
+    } else {
+      titleIndex++;
+      if (titleIndex >= titles.length) {
+        titleIndex = 0;
+      }
+      setTimeout(type, typingDelay);
+    }
+  }
+
+  // Start the typewriter effect
+  type();
+});

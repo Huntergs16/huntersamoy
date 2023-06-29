@@ -1,55 +1,57 @@
 .self-intro {
-    height: 30%;
-    display: flex;
-    padding: 0 7%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20%;
-    font-size: 1.5rem;
+  height: 30%;
+  display: flex;
+  padding: 0 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20%;
+  font-size: 1.5rem;
 }
 
 .welcome {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-/* .self-description {
-
-} */
+.self-description h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
 
 /* CSS for Typewriter Effect */
 .typewriter {
-    display: inline-block;
-    overflow: hidden; /* Ensure the text is hidden when it's not typing */
-    border-right: .15em solid orange; /* Add a blinking cursor effect */
-    white-space: nowrap; /* Prevent line breaks */
-    letter-spacing: .15em; /* Adjust the spacing between letters */
-    animation: typing 1s steps(40, end), blink-caret .75s step-end infinite; /* Define the typing animation */
+  display: inline-block;
+  overflow: hidden; /* Ensure the text is hidden when it's not typing */
+  border-right: 0.15em solid orange; /* Add a blinking cursor effect */
+  white-space: nowrap; /* Prevent line breaks */
+  letter-spacing: 0.15em; /* Adjust the spacing between letters */
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite; /* Define the typing animation */
+}
+
+/* Keyframes for Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* Keyframes for Typing Animation */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+  to {
+    width: 100%;
   }
-  
-  /* Keyframes for Blinking Cursor */
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
+}
+
+/* Keyframes for Blinking Cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  
+  50% {
+    border-color: #ffffff;
+  }
+}
