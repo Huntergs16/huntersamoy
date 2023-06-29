@@ -62,7 +62,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: -100%;
+  top: -100vh;
   left: 0;
   opacity: 0;
   z-index: 50;
@@ -128,7 +128,6 @@
   }
 
   #dropdown-menu {
-    top: -25%;
     display: flex;
   }
 

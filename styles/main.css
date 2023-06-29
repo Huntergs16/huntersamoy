@@ -28,7 +28,6 @@ main {
   min-height: 90%;
   top: max(20%, 150px);
   height: max-content;
-  z-index: -1;
 }
 
 a:active {
