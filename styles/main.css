@@ -19,7 +19,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh; /* Set the height to the viewport height */
-  overflow-y: auto; /* Enable vertical scrolling when needed */
+  overflow-y: auto; /* Enable vertical scrolling when needed h*/
 }
 
 main {
