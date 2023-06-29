@@ -16,6 +16,11 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed; /*Add this property*/
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
   position: absolute;
   width: 100vw;
   height: 100vh; /* Set the height to the viewport height */
