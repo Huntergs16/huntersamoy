@@ -23,7 +23,6 @@
   gap: 2vw;
   width: max(20%, max-content);
   font-size: 1.5rem;
-  background-color: #000000;
 }
 
 .link-container {
@@ -68,7 +67,7 @@
   opacity: 0;
   z-index: 50;
   background-image: linear-gradient(to bottom, #1e2366, #5569c5);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
@@ -130,6 +129,7 @@
 
   #dropdown-menu {
     top: -25%;
+    display: flex;
   }
 
   .menu-icon {
