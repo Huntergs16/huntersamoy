@@ -28,6 +28,7 @@ main {
   min-height: 90%;
   top: max(20%, 150px);
   height: max-content;
+  z-index: -1;
 }
 
 a:active {
@@ -40,4 +41,11 @@ a {
 
 ul {
   list-style: none;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  menu {
+    z-index: -1;
+  }
 }
