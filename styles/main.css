@@ -8,14 +8,14 @@
 html,
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   background-image: url("../public/nighttime.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
-  background-attachment: fixed; /*Add this property*/
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
