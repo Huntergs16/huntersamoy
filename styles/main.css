@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-image: url("../public/nighttime.jpg");
+  background-image: url("public/nighttimepng.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,6 @@ main {
   min-height: 90%;
   top: max(20%, 150px);
   height: max-content;
-  z-index: -1;
 }
 
 a:active {
@@ -45,7 +44,7 @@ ul {
 
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
-  menu {
+  main {
     z-index: -1;
   }
 }
