@@ -12,10 +12,10 @@ body {
 
 body {
   background-image: url("../public/nighttimepng.png");
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; Add this property */
+  background-attachment: fixed; /*Add this property*/
   position: absolute;
   width: 100vw;
   height: 100vh; /* Set the height to the viewport height */
