@@ -126,6 +126,10 @@
     display: none;
   }
 
+  .main-header .name h1 {
+    display: none;
+  }
+
   #dropdown-menu {
     display: flex;
   }
