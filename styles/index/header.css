@@ -93,15 +93,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
 }
 
 #dropdown-menu li {
   position: relative;
   height: 15vh;
   transition: 400ms;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
 }
 
 #dropdown-menu li:hover {
